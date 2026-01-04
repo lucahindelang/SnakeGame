@@ -28,7 +28,8 @@ canvas {
     padding: 0;
     margin: auto;
     display: block;
-    width: 600px;
+    width: 480px;
+    height: 480px;
 }
 
 .show-now {
