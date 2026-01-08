@@ -72,16 +72,16 @@
         }
 
         function keyDown(e) {
-            if (e.keyCode === 37 || e.keyCode === 65) {
+            if ((e.keyCode === 37 || e.keyCode === 65) && direction != 'RIGHT') {
                 direction = 'LEFT';
             }
-            if (e.keyCode === 38 || e.keyCode === 87) {
+            if ((e.keyCode === 38 || e.keyCode === 87) && direction != 'DOWN') {
                 direction = 'UP';
             }
-            if (e.keyCode === 39 || e.keyCode === 68) {
+            if ((e.keyCode === 39 || e.keyCode === 68) && direction != 'LEFT') {
                 direction = 'RIGHT';
             }
-            if (e.keyCode === 40 || e.keyCode === 83) {
+            if ((e.keyCode === 40 || e.keyCode === 83) && direction != 'UP') {
                 direction = 'DOWN';
             }
         }
